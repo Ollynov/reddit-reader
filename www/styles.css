@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #56b3a3;
+}
+

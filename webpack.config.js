@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 var config = {
   context: path.join(__dirname, 'src'),
@@ -18,6 +19,9 @@ var config = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({ 'typeof window': '\"object\"' })
+  ],
   resolveLoader: {
     root: [
       path.join(__dirname, 'node_modules'),
