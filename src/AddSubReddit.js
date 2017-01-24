@@ -10,7 +10,7 @@ class AddSubReddit extends React.Component {
 
   render() {
     return (
-      <button>AddSubReddit</button>
+      <button>Add SubReddit</button>
     );
   }
 }

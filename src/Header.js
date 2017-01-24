@@ -14,9 +14,9 @@ class Header extends React.Component {
   render() {
     return (
       <div className='Header'>
-        <Signup />
         <AddSubReddit />
         <RemoveSubReddit />
+        <Signup />
       </div>
     );
   }

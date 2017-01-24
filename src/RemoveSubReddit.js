@@ -10,7 +10,7 @@ class RemoveSubReddit extends React.Component {
 
   render() {
     return (
-      <button>RemoveSubReddit</button>
+      <button>Remove SubReddit</button>
     );
   }
 }
