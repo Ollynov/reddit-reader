@@ -14,10 +14,13 @@ class Header extends React.Component {
     return (
       <div className='header'>
         <AddSubReddit snoowrapCredentials={this.props.snoowrapCredentials} />
-        <RemoveSubReddit />
+        <div id='displaypopup'></div>
         <Signup />
       </div>
     );
   }
 }
 export default Header;
+
+
+// <RemoveSubReddit />
