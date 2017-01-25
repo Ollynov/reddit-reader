@@ -27,7 +27,7 @@ class AddSubReddit extends React.Component {
         title += '<a class="button" href="' + 'http://www.reddit.com' + item["permalink"] + '">see comments</a></div><br>';
         title += '</d><br>';
       });
-      document.getElementById('articles').innerHTML = title;
+      document.getElementById('articles').innerHTML += title;
     });
   }
 
@@ -45,14 +45,14 @@ class AddSubReddit extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.paintSubReddit(this.state.value)
+    this.paintSubReddit(this.state.value);
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <input type="text" value={this.state.value} onChange={this.handleChange} />
-        <input type="submit" />
+        <input type="submit" value="Add SubReddit"/>
       </form>
     );
   }
