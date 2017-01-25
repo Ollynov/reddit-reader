@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
   );
 });
 
+let paintTitle = (title) => {
+
+};
 
 const snoowrap = require('snoowrap');
 
@@ -21,13 +24,13 @@ const snoowrap = require('snoowrap');
 // Create a new snoowrap requester with OAuth credentials.
 // For more information on getting credentials, see here: https://github.com/not-an-aardvark/reddit-oauth-helper
 // const r = new snoowrap({
-//   userAgent: 'put your user-agent string here',
-//   clientId: 'put your client id here',
-//   clientSecret: 'put your client secret here',
-//   refreshToken: 'put your refresh token here'
+//   userAgent: '<browser> javascript.ollynov14',
+//   clientId: 'vOQvh_Rwn2vAzg',
+//   clientSecret: 'QimGYmnxDHx7cq_XJPRaGvT8mSY',
+//   refreshToken: '-ZrOanWVwsy7lUp8RUPkI1k10q8'
 // });
 
-// Alternatively, just pass in a username and password for script-type apps.
+//Alternatively, just pass in a username and password for script-type apps.
 const r = new snoowrap({
   userAgent: '<browser> Javascript ollynov14.Here we go',
   clientId: 'bQrCovIpgmO1yQ',
@@ -36,5 +39,11 @@ const r = new snoowrap({
   password: 'Ucsbsoph9!'
 });
 
-r.getHot().map(post => post.title).then(console.log);
-r.getSubreddit('AskReddit').getWikiPage('bestof').content_md.then(console.log);
+// Printing a list of the titles on the front page
+r.getHot().map(post => post).then(p => {
+  p.forEach(item => {
+    let title = '<p>';
+    title += item['title'];
+    title += '</p>';
+  });
+});

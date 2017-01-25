@@ -9,6 +9,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "reddit-oauth": "^1.1.1",
+    "reddit-oauth-helper": "^0.3.0",
     "request": "^2.79.0",
     "snoowrap": "^1.12.0",
     "webpack": "^1.13.1",
