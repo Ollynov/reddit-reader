@@ -20,7 +20,7 @@ class HotFeed extends React.Component {
     snoowrapCredentials.getHot().map(post => post).then(p => {
       let title = '';
 
-      console.log(p[0]);
+      console.log(p[5]['thumbnail']);
       p.forEach(item => {
         title += '<d class="individualArticle">';
         title += '<img src=' + item['thumbnail'] + '>' + '<br>';

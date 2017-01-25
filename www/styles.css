@@ -16,14 +16,24 @@ body {
 
 .individualarticle {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
 }
+
+/*.commentsandarticle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}*/
 
 button {
   background-color: #06b3a3;
   font-family: 'Fjalla One', sans-serif;
   border-radius: 20%;
+}
+
+a {
+  text-decoration: none;
 }
 
 a.button {
