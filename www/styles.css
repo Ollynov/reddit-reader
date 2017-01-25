@@ -20,11 +20,6 @@ body {
   flex-direction: row;
 }
 
-/*.commentsandarticle {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}*/
 
 button {
   background-color: #06b3a3;

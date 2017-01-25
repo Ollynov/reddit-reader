@@ -7,14 +7,13 @@ import RemoveSubReddit from './RemoveSubReddit.js';
 class Header extends React.Component {
   constructor() {
     super();
-    this.state = {
-    };
+
   }
 
   render() {
     return (
       <div className='header'>
-        <AddSubReddit />
+        <AddSubReddit snoowrapCredentials={this.props.snoowrapCredentials} />
         <RemoveSubReddit />
         <Signup />
       </div>
