@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <div id="App">
         <Header />
-        <p>Reddit Reader</p>
+        <p id='title'>Reddit Reader</p>
       </div>
     );
   }

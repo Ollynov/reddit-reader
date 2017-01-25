@@ -19,7 +19,8 @@ button {
   border-radius: 20%;
 }
 
-p {
+#title {
   display: flex;
   justify-content: center;
+  font-size: 30px;
 }
