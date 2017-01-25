@@ -1,5 +1,6 @@
 Reddit Reader
 
+Add developer OAuth2 credentials and Reddit API Access Token in App.js and you are ready to go.
 ---
 
 Usage
