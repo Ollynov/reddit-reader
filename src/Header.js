@@ -15,7 +15,6 @@ class Header extends React.Component {
       <div className='header'>
         <AddSubReddit snoowrapCredentials={this.props.snoowrapCredentials} />
         <div id='displaypopup'></div>
-        <Signup />
       </div>
     );
   }

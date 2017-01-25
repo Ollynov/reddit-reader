@@ -15,17 +15,15 @@ class AddSubReddit extends React.Component {
     console.log('this.props in constructor ', this.props);
   }
 
-  paintSubReddit(e) {
-    console.log('here is e ', e);
-    console.log('ok at least we being called bruh');
-    this.props.snoowrapCredentials.getSubreddit(e).getNew().then(p => {
+  paintSubReddit(query) {
+    this.props.snoowrapCredentials.getSubreddit(query).getNew().then(p => {
       let title = '';
 
       p.forEach(item => {
         title += '<d class="individualArticle">';
         title += '<img src=' + item['thumbnail'] + '>' + '<br>';
         title += '<div ><a href="' + item['url'] + '">' + item['title'] + '</a><br>';
-        title += e;
+        title += query;
         title += '<a class="button" href="' + 'http://www.reddit.com' + item["permalink"] + '">see comments</a></div><br>';
         title += '</d><br>';
       });
@@ -54,6 +52,7 @@ class AddSubReddit extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <input type="text" value={this.state.value} onChange={this.handleChange} />
+        <input type="submit" />
       </form>
     );
   }
