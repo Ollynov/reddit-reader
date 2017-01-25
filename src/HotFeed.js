@@ -25,7 +25,7 @@ class HotFeed extends React.Component {
         title += '<d class="individualArticle">';
         title += '<img src=' + item['thumbnail'] + '>' + '<br>';
         title += '<div class="commentsAndArticle"><a href="' + item['url'] + '">' + item['title'] + '</a><br>';
-        title += '<a href="' + 'http://www.reddit.com' + item["permalink"] + '">see comments</a></div><br>';
+        title += '<a class="button" href="' + 'http://www.reddit.com' + item["permalink"] + '">see comments</a></div><br>';
         title += '</d><br>';
       });
       document.getElementById('articles').innerHTML = title;
