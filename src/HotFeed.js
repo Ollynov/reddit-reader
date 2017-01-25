@@ -19,12 +19,14 @@ class HotFeed extends React.Component {
   paintArticles() {
     snoowrapCredentials.getHot().map(post => post).then(p => {
       let title = '';
-      console.log(p[0])
+
+      console.log(p[0]);
       p.forEach(item => {
-        title += '<p>';
-        title += item['title'] + '<br>';
+        title += '<d class="individualArticle">';
         title += '<img src=' + item['thumbnail'] + '>' + '<br>';
-        title += '</p><br>';
+        title += '<div class="commentsAndArticle"><a href="' + item['url'] + '">' + item['title'] + '</a><br>';
+        title += '<a href="' + 'http://www.reddit.com' + item["permalink"] + '">see comments</a></div><br>';
+        title += '</d><br>';
       });
       document.getElementById('articles').innerHTML = title;
     });
@@ -37,7 +39,7 @@ class HotFeed extends React.Component {
 
   render() {
     return (
-      <p>Hottest Articles</p>
+      <p id='feed'>Hottest Articles</p>
     );
   }
 }
